@@ -1,0 +1,116 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: rgb(250 250 250 / 95%);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 550px;
+  max-width: 90%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #444;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#city-input {
+  flex-grow: 1;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+#city-input::placeholder {
+  color: #aaa;
+}
+
+#search-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+  background-color: #218838;
+}
+
+.weather-info {
+  margin-top: 1.5rem;
+}
+
+.weather-info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.weather-info .temperature {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.weather-info .description {
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+
+.city-time {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.details > div {
+  text-align: center;
+}
+
+.details .label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+.details .value {
+  font-size: 1.1rem;
+}
+
+.error-message {
+  color: #d9534f;
+  font-weight: bold;
+}
